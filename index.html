@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Family Organizer Health Records</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<nav><a href="index.html">About</a><a href="privacy.html">Privacy and data use</a><a href="terms.html">Terms</a></nav>
+<h1>Family Organizer: health records</h1>
+<p class="sub">How the Family Organizer app connects to MyChart.</p>
+
+<h2>What it is</h2>
+<p>Family Organizer is a private, self-hosted app used by one family. It runs on the family's own server and is only
+reachable by the family's own devices. Part of it is a personal health journal, where a family member keeps track of
+symptoms, medications, lab results and doctor visits for themselves.</p>
+
+<h2>What the MyChart connection does</h2>
+<p>With the patient's permission, the app reads their <strong>lab results</strong> and <strong>visits</strong> from
+their health system's MyChart (through the standard SMART on FHIR interface) and adds them to their own health journal,
+so they don't have to be typed in by hand. It only reads; it never changes anything in the medical record.</p>
+
+<h2>How it works</h2>
+<ul>
+  <li>The patient opens <em>Health records</em> in their journal, picks their health system and signs in on the health
+  system's own MyChart page. The app never sees their MyChart user name or password.</li>
+  <li>MyChart shows exactly what the app may read, and for how long, and asks the patient to allow it.</li>
+  <li>What is read is encrypted straight away with a key only the patient's journal can open, and kept on the family's
+  server.</li>
+  <li>The patient can remove the app's access at any time in MyChart (linked apps), and disconnect it in the journal.</li>
+</ul>
+
+<h2>Data read</h2>
+<p>Lab results (Observation), visits (Encounter) and the patient's identity (Patient), read-only.</p>
+
+<h2>Questions</h2>
+<p>Ask the person who runs your family's Family Organizer server.</p>
+<footer>Family Organizer is a private app run by one family on its own server. It is not a commercial product and is not affiliated with Epic, MyChart or any health system.</footer>
+</main></body></html>
