@@ -18,8 +18,9 @@ approval.</p>
 <ul>
   <li>On the family's own server. Records are encrypted with a key that only the patient's journal unlocks (by their PIN,
   Face ID or printed recovery key). Other family members, including whoever runs the server, cannot read them.</li>
-  <li>The patient may choose to share their journal, read-only, with another family member; they can stop sharing at any
-  time, and they can see who opened it.</li>
+  <li>The patient may choose to share their journal, read-only, with family members they pick, one at a time; they can
+  stop sharing at any time. They get a notification each time someone opens it (they can turn this off), and every
+  opening is listed in the journal.</li>
 </ul>
 
 <h2>What is never done</h2>
@@ -30,11 +31,14 @@ approval.</p>
 </ul>
 
 <h2>Keeping and deleting</h2>
-<p>Records stay in the patient's journal until the patient deletes them; any entry can be deleted at any time.
-Disconnecting MyChart stops further reads. Removing the app in MyChart (linked apps) ends its access at the health
-system.</p>
+<p>Records stay in the patient's journal until the patient deletes them. Any entry can be deleted at any time, and
+<em>Delete my journal</em> erases the whole journal at once, including everything imported from MyChart, and forgets the
+MyChart connection. Removing someone from the family's app erases their journal straight away. The family server's
+nightly backups keep a locked copy for up to two weeks before it is gone; it cannot be opened without the patient's own
+PIN or recovery key. Removing the app in MyChart (linked apps) ends its access at the health system.</p>
 
 <h2>Access log</h2>
-<p>The app keeps a log of when MyChart was read and how many items came back, never their content.</p>
+<p>The journal lists every time someone the patient shares it with opens it. The app also notes when MyChart was last
+read and how many items came back, never their content.</p>
 <footer>Family Organizer is a private app run by one family on its own server. It is not a commercial product and is not affiliated with Epic, MyChart or any health system.</footer>
 </main></body></html>
